@@ -48,6 +48,7 @@ try:
             return {'data': datalst, 'multiple':Data.multiple}
 
         else:
+            result = DocDecM.Predict(i)
             return {'data': result,'multiple':Data.multiple}
         
     app = FastAPI()
